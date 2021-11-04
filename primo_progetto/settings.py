@@ -1,3 +1,4 @@
+import os
 """
 Django settings for primo_progetto project.
 
@@ -54,7 +55,7 @@ ROOT_URLCONF = 'primo_progetto.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'seconda_app/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
