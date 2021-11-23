@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-7bb-gt&dp%7wk6oj2zoy!$par*m*72_ms8@_q!$!suc=u-syxr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["colombomatteo.eu.pythonanywhere.com"]
 
 
 # Application definition
@@ -56,7 +56,7 @@ ROOT_URLCONF = 'primo_progetto.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'prima_app/templates'),os.path.join(BASE_DIR, 'seconda_app/templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'prima_app/templates'),os.path.join(BASE_DIR, 'seconda_app/templates'),os.path.join(BASE_DIR, 'primo_progetto/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
