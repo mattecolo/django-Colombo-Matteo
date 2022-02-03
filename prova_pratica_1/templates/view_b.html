@@ -1,0 +1,11 @@
+{% extends 'base.html'%}
+
+{%block title%} view_b {%endblock title%}
+
+{%block content%}
+<ul>
+{% for x in materie %}
+    <li>{{x}}</li>
+{% endfor %}
+</ul>
+{% endblock content %}
